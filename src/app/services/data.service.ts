@@ -28,4 +28,15 @@ getQuestions(){
   return this.questions;
 }
 
+addQuestion(question: Question){
+  this.questions.unshift(question);
+}
+
+removeQuestion(question: Question){
+  for (var index = 0; index < this.questions.length; index++) {
+    if(question == this.questions[index])
+      this.questions.splice(index, 1);  
+  }
+}
+
 }
