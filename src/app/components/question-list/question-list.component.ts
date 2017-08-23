@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Question } from '../../../app/models/Question';
 
 @Component({
   selector: 'app-question-list',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class QuestionListComponent implements OnInit {
 
-  questions:Object[] = [
+  questions:Question[] = [
     {
       text: 'What is your name?',
       answer:'My name is Darshan.',
